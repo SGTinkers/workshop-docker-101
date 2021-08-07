@@ -1,6 +1,11 @@
 version: "3"
 services:
 
+  web:
+    image: sample-react-app:latest
+    ports:
+      - 80:80
+
   backend:
     image: your-image-name:latest
     ports:

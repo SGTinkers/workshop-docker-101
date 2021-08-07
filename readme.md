@@ -20,4 +20,5 @@
   - highlight how the Node app cannot resolve `localhost` to our DB in the `docker-compose.yml`
   - highlight the special DNS name `host.docker.internal` which resolves to the host's IP address, but this only works cos we're exposing the DB container's port at the host
   - highlight how service names in `docker-compose.yml` becomes resolvable DNS names, when in containers participating in that `docker-compose.yml`
-  
+- Add a web server service (Nginx) to the `docker-compose.yml`, in preparation for serving a React app
+  - show how to create a simple Dockerfile that copies over the static files from the built React app to the folder in the Nginx container that Nginx will serve content out of
