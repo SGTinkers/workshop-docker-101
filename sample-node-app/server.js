@@ -30,7 +30,7 @@ console.log("Server listening on port 3000");
 async function connectToDatabase() {
   const client = new Client({
     user: 'test',
-    host: 'localhost',
+    host: 'db',
     database: 'foobar',
     password: 'secret',
     port: 5432,

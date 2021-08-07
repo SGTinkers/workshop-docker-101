@@ -1,0 +1,19 @@
+version: "3"
+services:
+
+  backend:
+    image: your-image-name:latest
+    ports:
+      - 3000:3000
+    depends_on:
+      - db
+
+  db:
+    image: postgres:13.3
+    environment:
+      - POSTGRES_USER=test
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DB=foobar
+
+volumes:
+  db_data:
