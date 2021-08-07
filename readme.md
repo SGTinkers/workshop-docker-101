@@ -15,7 +15,7 @@
   - `docker run --name postgres -p 5432:5432 -e POSTGRES_USER=test -e POSTGRES_PASSWORD=secret -e POSTGRES_DB=foobar postgres:13.3`
   - show how you can connect to the Postgres container just like any other installed-on-host Postgres or some other remote Postgres
 - Connect Node app with Postgres
-  - show how running the Node app on host and making it connect to the Postgres container
+  - show running the Node app on host and making it connect to the Postgres container
 - Intro Docker Compose by composing the Node app and the Postgres container
   - highlight how the Node app cannot resolve `localhost` to our DB in the `docker-compose.yml`
   - highlight the special DNS name `host.docker.internal` which resolves to the host's IP address, but this only works cos we're exposing the DB container's port at the host
